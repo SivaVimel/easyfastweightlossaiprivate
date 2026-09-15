@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — EasyFast</title>
+<meta name="description" content="Privacy policy for EasyFast: no account, no analytics, no servers. Your food diary and your weight never leave your phone.">
+<style>
+  :root{
+    --bg:#FFFFFF; --surface:#F7F6F4; --stroke:#E8E3DD;
+    --text:#17130F; --text2:#5C544C; --text3:#8A8175;
+    /* The ink pair, not the fill pair: the vivid brand orange is 2.9:1 on
+       white and this is a page made of text. */
+    --accent:#B03A05; --accent2:#C2410C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0E0C0B; --surface:#1A1614; --stroke:#2C2623;
+      --text:#F6F3F0; --text2:#A79E96; --text3:#8B8279;
+      --accent:#FF8C42; --accent2:#FFA05C;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:52px 20px 100px}
+  .mark{font-weight:800;font-size:15px;letter-spacing:-.2px}
+  .mark span{background:linear-gradient(135deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:clamp(34px,6vw,54px);line-height:1.06;letter-spacing:-1.4px;margin:30px 0 14px;max-width:14ch}
+  .lede{font-size:clamp(17px,2.4vw,21px);color:var(--text2);max-width:56ch;margin:0 0 26px}
+  .pill{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.3px;
+    color:var(--accent);background:color-mix(in srgb, var(--accent) 12%, transparent);
+    border-radius:999px;padding:6px 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:34px 0}
+  .card{background:var(--surface);border:1px solid var(--stroke);border-radius:18px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:16.5px;letter-spacing:-.2px}
+  .card p{margin:0;color:var(--text2);font-size:14.5px}
+  h2{font-size:clamp(24px,3.4vw,32px);letter-spacing:-.7px;margin:64px 0 10px}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:22px 0}
+  .steps li{counter-increment:s;position:relative;padding-left:46px;margin:16px 0;color:var(--text2)}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;
+    border-radius:50%;background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent);font-weight:700;font-size:14px;display:grid;place-items:center}
+  .steps strong{color:var(--text);display:block;font-size:16px}
+  .quote{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:30px 0;
+    font-size:18px;color:var(--text);max-width:56ch}
+  .foot{margin-top:70px;padding-top:22px;border-top:1px solid var(--stroke);
+    color:var(--text3);font-size:13.5px}
+  a{color:var(--accent)}
+  code{font:0.92em/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+    background:var(--surface);border:1px solid var(--stroke);
+    border-radius:6px;padding:1px 5px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">Easy<span>Fast</span></div>
+  <h1>Privacy Policy</h1>
+  <p class="lede">Last updated 15 September 2026. The short version: EasyFast has
+  no servers, so there is nowhere for your data to go.</p>
+
+  <span class="pill">No account · No analytics · No servers · Nothing collected</span>
+
+  <h2>What we collect</h2>
+  <p>Nothing. There is no account, no sign-in, no email address, no analytics,
+  no crash reporting, no advertising identifier and no tracking of any kind. The
+  developer has no way to see that you have installed the app, let alone what is
+  in it.</p>
+
+  <h2>Where your data lives</h2>
+  <p>Your food diary, your weigh-ins, your saved meals, the foods you added and
+  your profile are stored as a handful of ordinary JSON files in the app's own
+  private folder on your device — <code>Application Support</code>, not
+  <code>Documents</code>. iOS encrypts that folder at rest. It is not visible in
+  the Files app and it is not shared with other apps.</p>
+  <p>Files you export sit in the app's cache folder instead, because they are
+  disposable copies of data the app already holds. They are marked so that they
+  are not swept into a backup, and iOS is free to clear them.</p>
+  <p>If you have iCloud Backup switched on for your device, iOS may include the
+  app's folder in your own encrypted device backup. That is between you and
+  Apple; EasyFast neither requests nor reads it.</p>
+
+  <h2>Updating the app</h2>
+  <p>Updating EasyFast does not touch what you have logged. The diary folder
+  belongs to the app, not to the version of it you happen to have installed, and
+  iOS keeps it across updates. Deleting the app deletes the folder with it —
+  that is the only thing that clears your history, apart from the erase button
+  inside the app.</p>
+
+  <h2>The AI</h2>
+  <p>The language model — Llama 3.2 1B — ships inside the app and runs on your
+  device through llama.cpp. Nothing you type goes to a server to be understood.
+  It works in aeroplane mode, on the first launch, before you have ever had a
+  connection.</p>
+  <p>The model never produces a calorie figure. Every number in the app comes
+  from the food database on the device or from arithmetic on what you logged,
+  and anything the model writes is checked against those figures before it is
+  shown to you. Where that check fails, you get the computed answer and the app
+  says so on the message.</p>
+
+  <h2>Connecting your own AI service (optional, off by default)</h2>
+  <p>You may connect an external provider with your own API key. If, and only
+  if, you do that and switch it on, the text of your question and the short fact
+  sheet the app computed to answer it are sent to the provider you chose, over
+  HTTPS, using your key. Your diary, your weigh-ins and your profile are never
+  sent. Your key is stored on this device only. Turning the feature off stops it
+  immediately; the app is fully functional without it.</p>
+
+  <h2>The camera</h2>
+  <p>The camera is used only to decode a barcode in front of it, and only while
+  the scanning screen is open. No image is saved and no image is transmitted.
+  You can refuse the permission and every other part of the app still works.</p>
+
+  <h2>The microphone</h2>
+  <p>If you use dictation, iOS speech recognition turns speech into text. This is
+  requested on-device where your device supports it. The resulting text is
+  treated exactly like anything you typed.</p>
+
+  <h2>Health data</h2>
+  <p>EasyFast does not read from or write to Apple Health, and requests no
+  HealthKit permissions.</p>
+
+  <h2>Crash reports</h2>
+  <p>EasyFast contains no crash-reporting or analytics SDK of any kind. If you
+  have switched on <em>Share iPhone Analytics</em> in iOS Settings, iOS may
+  send Apple a crash log for any app on your device, including this one. That is
+  an iOS setting under your control, the developer receives nothing from it
+  unless you have also chosen to share with developers, and a crash log contains
+  no diary content.</p>
+
+  <h2>Advertising and payment</h2>
+  <p>There are none. No adverts, no advertising SDK, no in-app purchases, no
+  subscription and no payment processor. Nothing in the app is a funnel to
+  anything.</p>
+
+  <h2>Children</h2>
+  <p>EasyFast is not directed at children and should not be used by anyone under
+  18 without the involvement of a doctor or dietitian.</p>
+
+  <h2>Your rights</h2>
+  <p>GDPR, the UK GDPR, the CCPA and every regime like them give you rights of
+  access, correction, portability, erasure and objection against whoever holds
+  your data. Nobody holds yours but you, so there is nothing to request from us
+  and no request we could usefully answer.</p>
+  <p>What those rights would have given you is already in the app, without
+  asking anyone: <strong>More → Your data</strong> exports the diary, the
+  weigh-ins and the daily totals as plain CSV, or the whole thing as one JSON
+  backup that restores exactly. The same screen erases everything. Deleting the
+  app deletes the data with it. None of it is rate-limited, gated behind a
+  purchase, or dependent on this developer still being here.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy ever changes, the updated version will be published here and
+  the date above will change. A change that introduced any form of collection
+  would be described plainly, at the top.</p>
+
+  <h2>Who is responsible</h2>
+  <p>EasyFast is made by an independent developer, contactable at
+  <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>.
+  There is no company, no data-processing agreement to sign and no sub-processor
+  list, because there is no processing — which is the whole point of building it
+  this way.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about anything else in the app:
+  <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a></p>
+
+  <div class="foot">
+    EasyFast · <a href="privacy.html">Privacy</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a><br>
+    Inference by llama.cpp (MIT). Llama 3.2 is licensed under the Llama 3.2
+    Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.
+    EasyFast is a food and weight diary, not a medical device, and gives no
+    medical advice. If your relationship with food or weight is something you
+    would like help with, a GP, a registered dietitian or a national
+    eating-disorder charity are good places to start.
+  </div>
+</div>
+</body>
+</html>
